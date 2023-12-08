@@ -12,6 +12,148 @@
   </head>
 
   <body>
-    <!-- TODO: Code your dashboard here -->
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid space-around">
+        <a class="navbar-brand" href="#">Le Wagon Airbnb</a>
+        <div class="d-flex">
+          <div class="d-flex form-group align-items-center">
+            <input type="text" class="input-group" placeholder="Search">
+            <button class="btn btn-success">Search</button>
+          </div>
+          <button class="navbar-toggler ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="d-flex align-items-center border-bottom pb-3">
+              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" width="40">
+              <h5 class="ms-3 offcanvas-title" id="offcanvasNavbarLabel">Welcome 👋</h5>
+
+            </div>
+            <ul class="navbar-nav justify-content-end flex-grow-1 ps-3 mt-3">
+              <li class="nav-item my-1">
+                <a class="nav-link badge-md badge-primary rounded ps-1 text-bg-primary" aria-current="page" href="#"><i class="fa-solid fa-table-columns"></i> Home</a>
+              </li>
+              <li class="nav-item my-1">
+                <a class="nav-link" href="#"><i class="fa-solid fa-house"></i> My Flats</a>
+              </li>
+              <li class="nav-item my-1">
+                <a class="nav-link" href="#"><i class="fa-solid fa-book"></i> My Bookings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <div class="alert alert-primary" role="alert">
+        Check out your incoming bookings!
+      </div>
+
+      <h1>Bookings</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Email</th>
+            <th scope="col">Date</th>
+            <th scope="col">Apartament</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Garden View Flat</td>
+            <td>Jan, 1st 2023 - Jan, 23rd 2023</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Garden View Flat</td>
+            <td>Jan, 1st 2023 - Jan, 23rd 2023</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Garden View Flat</td>
+            <td>Jan, 1st 2023 - Jan, 23rd 2023</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Garden View Flat</td>
+            <td>Jan, 1st 2023 - Jan, 23rd 2023</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Garden View Flat</td>
+            <td>Jan, 1st 2023 - Jan, 23rd 2023</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Garden View Flat</td>
+            <td>Jan, 1st 2023 - Jan, 23rd 2023</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h1>Flats</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Available</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Sitio da Emilia</td>
+            <td>Monteiro Lobato</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Garden View</td>
+            <td>Paris</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Orla de Copacabana</td>
+            <td>Rio de Janeiro</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
   </body>
 </html>
